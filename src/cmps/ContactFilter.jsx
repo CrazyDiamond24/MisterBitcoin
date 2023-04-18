@@ -27,7 +27,6 @@ export class ContactFilter extends Component {
     ]
     return (
       <form className='contact-filter'>
-        <h3>Search Contacts</h3>
         {fields.map((field) => (
           <section key={field.name}>
             <input

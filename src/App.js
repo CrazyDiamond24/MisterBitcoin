@@ -35,10 +35,9 @@ function App() {
             <div className='routes'>
               {routeNames.map((routeName, index) => (
                 <NavLink
-                  exact={true}
                   key={routeName + index}
                   to={`/${routeName}`}
-                  activeClassName='active'
+                  active-class-name='active'
                   onClick={() => handleRouteClick(routeName)}
                   className='nav-link'
                 >
@@ -50,29 +49,21 @@ function App() {
         </header>
         <main className='main-content-container'>
           <Routes>
-            <Route exact path='/' element={<RouteWrapper component={Home} />} />
+            <Route  path='/' element={<RouteWrapper component={Home} />} />
+            <Route path='/Home' element={<RouteWrapper component={Home} />} />
             <Route
-              exact
-              path='/Home'
-              element={<RouteWrapper component={Home} />}
-            />
-            <Route
-              exact
               path='/Contacts'
               element={<RouteWrapper component={ContactIndex} />}
             />
             <Route
-              exact
               path='/Chart'
               element={<RouteWrapper component={StatisticPage} />}
             />
             <Route
-              exact
               path='/signup'
               element={<RouteWrapper component={SignupPage} />}
             />
             <Route
-              exact
               path='/contact/edit/:id?'
               element={<RouteWrapper component={ContactEditWrapper} />}
             />

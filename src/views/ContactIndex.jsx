@@ -55,7 +55,9 @@ export class ContactIndex extends Component {
         if (!contacts) return <div>Loading...</div>
         return (
             <section className='contact-index'>
-                <Link className='add-btn' to="/contact/edit">Add Contact</Link>
+                {!selectedContactId && (
+                    <Link className='add-btn' to="/contact/edit">Add Contact</Link>
+                )}
                 {selectedContactId ?
                     <ContactDetails contactId={selectedContactId} onBack={(() => this.onSelectContact(null))} /> :
                     <>
@@ -66,4 +68,5 @@ export class ContactIndex extends Component {
             </section>
         )
     }
+    
 }

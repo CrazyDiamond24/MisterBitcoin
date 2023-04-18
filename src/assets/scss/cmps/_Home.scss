@@ -106,3 +106,27 @@
     }
   }
   
+
+  @media (max-width: 700px) {
+    .home {
+      padding: 1rem;
+    }
+  
+    .user-info-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .btc {
+      align-self: center;
+    }
+  
+    .logout-button {
+      margin-top: 1rem;
+      background-color: #d15c06;
+      &:hover {
+        background-color: #f56a28;
+      }
+    }
+  }
+  

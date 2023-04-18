@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-block-start: 50px;
+  margin-block-start: 20px;
   border-radius: 20px;
 }
 .contact-info-details {
@@ -144,7 +144,7 @@
       transform: translateY(0);
     }
     .contact-name::before {
-      width: 110%;
+      width: 10%;
       transform: translate(-25px, -5px);
     }
     .contact-email::before {
@@ -179,16 +179,16 @@
       margin-block-start: 10px;
     }
     .contact-name::before {
-        width: 110%;
-        transform: translate(-25px, -5px);
+        width: 90%;
+        transform: translate(30px, -5px);
       }
       .contact-email::before {
-        width: 110%;
-        transform: translate(-25px, -5px);
+        width: 100%;
+        transform: translate(5px, -5px);
       }
       .contact-phone::before {
-        width: 110%;
-        transform: translate(-25px, -5px);
+        width: 90%;
+        transform: translate(25px, -5px);
       }
     .contact-avatar {
       width: 120px;

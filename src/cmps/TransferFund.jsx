@@ -36,7 +36,7 @@ export class TransferFund extends Component {
 
     return (
       <article className="transfer-fund">
-        <h1>Transfer coins to {contact.name}:</h1>
+        <h1>Transfer funds to {contact.name}:</h1>
         <form className="flex align-center" onSubmit={this.onTransfer}>
           <p>Amount: </p>
           <input ref={this.inputRefFunc} type="number" value={amount} onChange={this.handleChange} name="amount" />
