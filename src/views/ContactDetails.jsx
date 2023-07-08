@@ -4,6 +4,7 @@ import { userService } from '../services/user.service'
 import { Link } from 'react-router-dom'
 import { MovesList } from '../cmps/MovesList'
 import { TransferFund } from '../cmps/TransferFund'
+
 export class ContactDetails extends Component {
   state = {
     contact: null,
@@ -45,6 +46,8 @@ export class ContactDetails extends Component {
     const coins = currUser ? currUser.coins : 0
     return (
       <>
+      if (!this.contact) return <div>Loading...</div>
+      console.log('contact' , contact)
         <section className='contact-details'>
           <img
             className='contact-avatar'

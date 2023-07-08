@@ -44,7 +44,7 @@ export class ContactEdit extends Component {
       <section className='contact-edit'>
         
         <img
-          src='https://cdn-ghekn.nitrocdn.com/YUvChxRvcTprTfRRMCsflKVCpVauhGnj/assets/images/optimized/rev-1ed0dd1/wp-content/uploads/2023/01/Crypto-exchange-illustration-01-01.png'
+         src='https://cdn-ghekn.nitrocdn.com/YUvChxRvcTprTfRRMCsflKVCpVauhGnj/assets/images/optimized/rev-9d5dde8/www.pixelettetech.com/wp-content/uploads/2023/01/Crypto-exchange-illustration-01-01-2048x2048.png'
           alt=''
           />
 
