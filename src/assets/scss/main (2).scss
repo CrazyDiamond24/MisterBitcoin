@@ -1,0 +1,41 @@
+// Setup
+@import 'setup/variables';
+@import 'setup/functions';
+@import 'setup/mixins';
+
+// Basics
+@import 'basics/typography';
+@import 'basics/base';
+@import 'basics/helpers';
+@import 'basics/layout';
+
+// Views
+@import 'cmps/ContactIndex';
+@import 'cmps/StatisticPage';
+@import 'cmps/ContactDetails';
+@import 'cmps/Home';
+@import 'cmps/SignUp';
+@import 'cmps/ContactEdit';
+
+// Components
+@import 'cmps/ContactPreview';
+@import 'cmps/ContactList';
+@import 'cmps/ContactFilter';
+@import 'cmps/MovesList';
+
+
+.user-message {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+  
+    &:hover {
+      background-color: #45a049;
+    }
+  }
+  

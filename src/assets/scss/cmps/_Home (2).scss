@@ -1,0 +1,108 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    font-family: 'Oswald', sans-serif;
+    color: #cbe7ed;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .user-info-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      height: 2px;
+      background: linear-gradient(90deg, rgba(0, 100, 255, 0) 0%, rgba(0, 100, 255, 0.2) 20%, rgba(0, 100, 255, 0.6) 50%, rgba(0, 100, 255, 0.2) 80%, rgba(0, 100, 255, 0) 100%);
+      box-shadow: 0 0 5px rgba(0, 100, 255, 0.3);
+    }
+  }
+  
+  
+  
+  .user-info{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  .value-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .coins, .btc {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .btc {
+    transform: translate(-10px);
+  }
+  .bitcoin-icon {
+    width: 2.5rem;
+    margin-right: 1rem;
+  }
+  
+  
+  .money-bag {
+    width: 2.5rem;
+    margin-right: 1rem;
+  }
+  
+  span {
+    margin-left: 0.5rem;
+  }
+  
+  .btc {
+    background-color: rgb(76, 175, 80,0.5);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logout-button {
+    background-color: #047fa1;
+    color: white;
+    padding: 0.2rem 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-block-start: 20px;
+  
+    &:hover {
+      background-color: #032a3b;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transform: scale(1.1);
+      border:1px solid #047fa1;
+    }
+  
+    &:active {
+      background-color: #001a20;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
